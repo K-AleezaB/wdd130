@@ -1,0 +1,15 @@
+img{
+    width: 50%;
+display: block;
+margin: 0 auto;
+}
+#title{font-size: 4em;}
+.shadow{background-color: lightgray;}
+p{background-color: white;}
+
+#content{max-width: 900px;
+background-color: white;
+margin: 40px auto;}
+
+
+ 
