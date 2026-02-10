@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rock+Salt&family=RocknRoll+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rock+Salt&family=RocknRoll+One&display=swap');
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -40,6 +45,7 @@ nav a {
 
 #hero-msg h1 {
     text-align: center;
+    justify-self: center;
 }
 
 #hero-msg h4 {
