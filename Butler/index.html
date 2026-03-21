@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCurious</title>
+</head>
+<body>
+    <header>
+        <a id="logo_home_link" href="index.html">
+            <img class="logo" src="images/logo.png">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Community.html">Community Page</a>
+            <a href="Extreme-Weather.html">Extreme Weather</a>
+            <form>
+                <label for="gsearch">Search:</label>
+                <input type="search" id="gsearch" name="gsearch">
+                <input type="submit">
+            </form>
+        </nav>
+    </header>
+<div id="hero">
+    <div id="hero-box">
+        <img id="hero-img" src="Images/hero-img.png">
+    </div>
+    <h1 class="Title">SkyCurious</h1>
+</div>
+<main class="home-grid">
+    <section class="weather-phenomena">
+        <h2>Amazing Weather Phenomena</h2>
+        <img class="sundog" src="Images/weather-phenomena.jpg">
+    </section>
+    <section class="Phenomena-content">
+        <button class="accordion">Learn More</button>
+        <div class="panel">
+            <p>
+                The sky is home to many wonders that may seem impossible until science explains them. 
+                From colorful rainbows and dramatic lightning to rare sights like sun dogs and glowing halos, 
+                he atmosphere creates incredible displays of light and color. These moments occur when sunlight, 
+                water, and ice interact in just the right way, transforming everyday weather into something truly fascinating.
+            </p>
+        </div>
+    </section>
+    <section class="weather-works">
+        <h2>How Weather Works</h2>
+        <img class="clouds" src="Images/clouds.jpg">
+    </section>
+    <section class="weather-works">
+        <button class="accordion">Learn More</button>
+        <div class="panel">
+            <p>
+            Weather can be considered as the atmosphere in motion—shaped by temperature, humidity, air pressure, and wind, all interacting at once. 
+            Warm air rises, cool air sinks, moisture moves around, and pressure shifts create everything from gentle breezes to dramatic storms. 
+            As air masses collide, they form fronts that can spark rain, thunderstorms, or sudden changes in the sky.
+            All of this is powered by the Sun and tied together by the water cycle, making weather a constantly changing system.
+            </p>
+        </div>
+    </section>
+        <section class="matters">
+        <h2>Why Weather Matters to us</h2>
+        <img class="clouds" src="Images/person-at-lake.jpg">
+    </section>
+    <section class="matters-content">
+        <button class="accordion">Learn More</button>
+        <div class="panel">
+            <p>
+            Weather shapes everyday life—from choosing what to wear to staying safe during storms. Forecasts help us plan ahead, 
+            while farmers depend on rain and temperature to grow our food. Travel on land and in the air also relies on good weather to run smoothly.
+            Even ecosystems depend on it, as weather guides animal behavior and determines which plants can thrive. It’s a small word with a big impact on our world.
+            </p>
+        </div>
+    </section>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<section class="about-us">
+    <h4>About This Website</h4>
+    <p>
+        I made this website because I’ve always been fascinated by the sky and all the wild, wonderful things it can do.
+        This site is meant to make learning about weather feel easy, fun, and interesting—not just a bunch of charts and numbers. 
+        Whether you’re curious about storms, strange weather phenomena, or just want to understand the forecast a little better, 
+        I’m here to help you explore it all in a way that feels clear, engaging, and enjoyable.
+    </p>
+</section>
+</main>
+<footer>
+    <img src="images/logo.png">
+    <a href="sources.html">Sources</a>
+    <a href="more">More Information</a>
+    <img src="images/instagram.jpg">
+    <img src="images/facebook.png">
+    <img src="Images/twitter.jpg">
+</footer>
+</body>
+</html>
