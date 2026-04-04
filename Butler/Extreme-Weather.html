@@ -4,6 +4,302 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Covered+By+Your+Grace&family=Exo:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rock+Salt&family=RocknRoll+One&display=swap');
+    .inconsolata {
+        font-family: "Inconsolata", monospace;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    .exo {
+        font-family: "Exo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        }
+    h1, h2 {
+        font-family: "Exo", sans-serif;
+    }
+    p, a, label {
+        font-family: "Inconsolata", monospace;
+    }
+    body {
+        background-color:#E0E4E5 ;
+    }
+    nav {
+        flex: 1; 
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        color:whitesmoke;
+    }
+    nav a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 1.1em;
+        width: 100%;
+    }  
+    header {
+        background-color:#61707D;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        padding-bottom: 5px;
+        width: 94.4%;
+    }
+    .search {
+        display: flex;
+        gap: 8px;
+    }
+    nav a:hover {
+        color:#E8A63C;
+    }
+    .logo {
+        width: 15vw;   
+        max-width: 80px;
+        height: auto;
+        padding-right: 60px;
+    }
+    #hero {
+        position: relative;
+        width: 100%;
+        height: 100vh; 
+        overflow: hidden;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+    }
+    #hero .Title {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 5em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+        footer {
+        background-color: #61707D;
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 40px;
+        width: 94.4%;
+        margin-top: 15px;
+    }
+    footer a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+    footer a:hover {
+        color:#E8A63C;
+    }
+    footer img {
+        width: 30px;
+        height: auto;
+    }
+    #footer-logo {
+        width: 15vw;   
+        max-width: 80px;
+        height: auto;
+    }
+#Ew-grid {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    gap: 20px;
+    width: 94%;
+    margin: 0 auto;
+    }
+    
+    .topmsg {
+        grid-column: 1/31;
+        padding: 30px;
+        text-align: center;
+        background-color: #E8A63C;
+        border-radius: 15px;
+        border: 2px solid #61707D;
+        margin-top: 50px;
+    }
+    .tornado {
+        grid-column: 1 / 6 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:#157C9F;
+        border: #083e50;
+        gap: 5px;
+    }
+    #t-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    #t-img:hover{
+        transform: scale(1.4);
+    }
+    .t-content {
+        grid-column: 6/11;
+        padding: 10px;
+        color: #157C9F;
+        font-size: smaller;
+        background-color: #f1bf6e;
+        border-radius: 15px;
+    }
+    .hurricane {
+        grid-column: 11 / 16;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:#157C9F;
+        border: #083e50;
+        gap: 5px;
+    }
+        #h-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+        #h-img:hover{
+        transform: scale(1.8);
+    }
+    .h-content {
+        grid-column: 16 / 21;
+        padding: 10px;
+        color: #157C9F;
+        font-size: smaller;
+        background-color: #f1bf6e;
+        border-radius: 15px;
+    }
+    .derecho {
+        grid-column: 21 / 26;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:#157C9F;
+        border: #083e50;
+        gap: 5px;
+    }
+    #de-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    #de-img:hover{
+        transform: scale(2);
+    }
+    .de-content {
+        grid-column: 26 / 31;
+        padding: 10px;
+        color: #157C9F;
+        font-size: smaller;
+        background-color: #f1bf6e;
+        border-radius: 15px;
+    }
+    .TPY {
+        grid-column: 1 / 11;
+        text-align: center;
+        padding: 20px;
+        color: #2e2e2e;
+        font-size: larger;
+        background-color: rgb(176, 205, 230);
+        border: 10px solid #083e50;
+        border-radius: 10px;
+    }
+    .RH {
+        grid-column: 11 / 21;
+        text-align: center;
+        padding: 20px;
+        color: #2e2e2e;
+        font-size: larger;
+        background-color: rgb(176, 205, 230);
+        border: 10px solid #083e50;
+        border-radius: 10px;
+    }
+    .TDW {
+        grid-column: 21 / 31;
+        text-align: center;
+        padding: 20px;
+        color: #2e2e2e;
+        font-size: larger;
+        background-color: rgb(176, 205, 230);
+        border: 10px solid #083e50;
+        border-radius: 10px;
+    }
+    .radar {
+        grid-column: 1 / 31;
+        padding: 30px;
+        text-align: center;
+        background-color: #E8A63C;
+        border-radius: 15px;
+        border: 2px solid #61707D;
+        display: grid;
+        grid-template-columns: repeat(30, 1fr);
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    #scrn {
+        height: auto;
+        border-radius: 10px;
+        grid-column: 1 / 15;
+        width: 100%;
+        transition: transform 0.2s ease;
+        transform-origin: center center;
+    }
+    #hook {
+        height: auto;
+        grid-column: 15/31;
+        border-radius: 10px;
+        width: 100%;
+    }
+    #radarcontent2{
+        grid-column: 1/15;
+    }
+    #radarcontent{
+        grid-column: 15 / 31;
+    }
+    #stats{
+        text-align: center;
+        font-size: 2em;
+        color: #2e2e2e;
+    }
+    #zoom-radius{
+        width: 400px;         
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        grid-column: 1 / 15;
+    }
+    #tile{
+        font-size: larger;
+        grid-column: 1 / 31;
+        text-align: center;
+    }
+    .radar-img {
+        width: 100%;          
+        max-width: 500px;     
+        height: auto;         
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+        transform-origin: center center;
+    }
+   
+
+
+  </style>
 </head>
 <body>
      <header>
@@ -21,7 +317,7 @@
             </form>
         </nav>
     </header>
-    <main>
+    <main id="Ew-grid">
         <section class="topmsg">
         <h2>Types of Extreme Weather</h2>
         <p id="Weathercontent">Extreme weather is what happens when the atmosphere pushes its limits—producing powerful events like tornadoes, 
@@ -30,7 +326,7 @@
         </p>
         </section>
         <section class="tornado">
-            <h3>Tornadoes</h3>
+            <h3 id="t-title">Tornadoes</h3>
             <img id="t-img" src="Images/tornado.jpg">
         </section>
         <section class="t-content">
@@ -38,8 +334,8 @@
                 This clash can create a rotating updraft, and if that rotation tightens, it can descend toward the ground, and a tornado can form. They can move unpredictably, 
                 bringing intense winds with them.</p>
         </section>
-                <section class="Hurricane">
-            <h3>Hurricanes</h3>
+                <section class="hurricane">
+            <h3 id="h-title">Hurricanes</h3>
             <img id="h-img" src="Images/hurricane.jpg">
         </section>
         <section class="h-content">
@@ -48,46 +344,77 @@
                 long-lasting systems capable of causing widespread impact.</p>
         </section>
                 </section>
-                <section class="Derecho">
-            <h3>Derechos</h3>
+                <section class="derecho">
+            <h3 id="de-title">Derechos</h3>
             <img id="de-img" src="Images/derecho.jpg">
         </section>
         <section class="de-content">
             <p>Derechos are long-lasting windstorms that develop from fast-moving lines of thunderstorms. When these storms surge forward, they create powerful straight-line winds that can travel 
                 hundreds of miles and cause damage similar to a tornado—but in one broad direction instead of a rotating path. Derechos are less common but can be incredibly destructive when they form.</p>
         </section>
-        <h2>Statistics</h2>
+        <h2 id="stats">Statistics</h2>
         <section class="TPY">
             <h4>Tornadoes Per Year (USA)</h4>
             <p>1200</p>
         </section>
-                <section class="RH">
+        <section class="RH">
             <h4>Recorded Hurricanes</h4>
             <p>972</p>
         </section>
-                <section class="TDW">
+        <section class="TDW">
             <h4>Typical Derecho Windspeeds</h4>
             <p>58-130 mph</p>
         </section>
-        <section class="radar">
-            <h5 id="tile">How to Read a Weather Radar</h5>
-            <p id="radarcontent">Weather radar sends out bursts of energy that bounce off raindrops, snow, or hail and return to the radar site. 
-                The strength of that returned signal is shown as colors on the map: greens usually mean lighter rain, yellows and oranges show heavier precipitation, 
-                and reds or purples can point to very heavy rain or hail. These color patterns help you quickly see where storms are developing and how strong they might be.</p>
-            <img id="scrn" src="Images/radar.png">
-            <p id="radarcontent2">Radar images also reveal important storm features based on their shape and movement. A curved or hook-like pattern can signal rotation inside a thunderstorm, 
+<section class="radar">
+
+    <h5 id="tile">How to Read a Weather Radar</h5>
+    <div id="zoom-radius">
+        <img class="radar-img" id="scrn" src="Images/radar.png">
+    </div>
+    <p id="radarcontent">
+        Weather radar sends out bursts of energy that bounce off raindrops, snow, or hail and return to the radar site. 
+        The strength of that returned signal is shown as colors on the map: greens usually mean lighter rain, yellows and oranges show heavier precipitation, 
+        and reds or purples can point to very heavy rain or hail. These color patterns help you quickly see where storms are developing and how strong they might be.
+    </p>
+    <p id="radarcontent2">
+       Radar images also reveal important storm features based on their shape and movement. A curved or hook-like pattern can signal rotation inside a thunderstorm, 
                 while a bow-shaped line often indicates strong straight-line winds pushing ahead of the storm. Radar can also estimate wind direction and speed, helping meteorologists spot hazards 
-                like downbursts or strengthening storm cells. Recognizing these patterns makes radar a powerful tool for understanding severe weather.</p>
-            <img id="hook" src="Images/hook-echo.png">
-        </section>
+                like downbursts or strengthening storm cells. Recognizing these patterns makes radar a powerful tool for understanding severe weather.
+    </p>
+    <img class="radar-img" id="hook" src="Images/hook-echo.png">
+
+</section>
+
     </main>
-        <footer>
-            <img src="images/logo.png">
-            <a href="sources.html">Sources</a>
-            <a href="more">More Information</a>
-            <img src="images/instagram.jpg">
-            <img src="images/facebook.png">
-            <img src="Images/twitter.jpg">
-        </footer>
+    <script>
+    const zoomImg = document.querySelector('#scrn');
+const zoomArea = document.querySelector('#zoom-radius');
+
+zoomArea.addEventListener('mousemove', function(e) {
+    const rect = zoomArea.getBoundingClientRect();
+    const x = e.clientX - rect.left; 
+    const y = e.clientY - rect.top;
+
+    const xPercent = (x / rect.width) * 100;
+    const yPercent = (y / rect.height) * 100;
+
+    zoomImg.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+    zoomImg.style.transform = "scale(2.5)";
+});
+
+zoomArea.addEventListener('mouseleave', function() {
+    zoomImg.style.transform = "scale(1)";
+    zoomImg.style.transformOrigin = "center center";
+});
+</script>
+
+<footer>
+    <img id="footer-logo" src="images/logo.png">
+    <a id="sources" href="sources.html">Sources</a>
+    <a id="more" href="more.html">More Information</a>
+    <img id="instagram" src="images/instagram.jpg">
+    <img id="facebook" src="images/facebook.png">
+    <img id="twitter" src="Images/twitter.jpg">
+</footer>
 </body>
 </html>
