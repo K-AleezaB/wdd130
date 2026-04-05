@@ -5,11 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Page</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #10002B, #240046, #3C096C);
+    color: #E0AAFF;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #240046;
+    border-bottom: 4px solid #5A189A;
+}
+
+header img {
+    width: 120px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+    border-radius: 50%;
+}
+
+header h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: #C77DFF;
+}
+
+nav {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav button {
+    background: #5A189A;
+    color: #E0AAFF;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+nav button:hover {
+    background: #7B2CBF;
+    transform: translateY(-2px);
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+section {
+    background: none;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid #5A189A;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+p{
+    background: none;
+}
+
+
+section h2 {
+    color: #C77DFF;
+    margin-bottom: 1rem;
+}
+
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    text-align: center;
+}
+
+section:nth-of-type(2) img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #9D4EDD;
+    transition: 0.3s ease;
+}
+
+section:nth-of-type(2) img:hover {
+    transform: scale(1.05);
+}
+
+section:nth-of-type(2) a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #E0AAFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section:nth-of-type(2) a:hover {
+    color: #C77DFF;
+}
+
+footer {
+    background: #3C096C;
+    padding: 2rem 1rem;
+    border-top: 4px solid #5A189A;
+    margin-top: 3rem;
+    color: #E0AAFF;
+}
+
+footer h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #C77DFF;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer li {
+    margin: 0.4rem 0;
+}
+
+footer a {
+    color: #E0AAFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #C77DFF;
+}
+
+footer div {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #9D4EDD;
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C77DFF;
+    font-size: 1.2rem;
+}
+    </style>
 </head>
 <body>
     <header>
         <img src="images/WebPageLogo.png" alt="Logo">
-        <h1>Place Holder Heading</h1>
+        <h1>Kendra Butler's Portal Page</h1>
         <nav>
             <button>Home</button>
             <button>Place Holder</button>
@@ -18,42 +177,32 @@
     </header>
     <main>
         <section>
-            <h2> Place Holder Heading</h2>
-            <p>        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
-        vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
-        ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique,
-        tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec
-        mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio,
-        elementum in tempus eu, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
-        Ut vulputate eros nec felis sodales nec vulputate justo hendrerit. Vivamus
-        varius pretium ligula, a aliquam odio.
+            <h2> About Me</h2>
+            <p> I was born in California and moved to Missouri when I was seven. I love reading, gaming, and archery, 
+                and I’ve always had a soft spot for anything creative or hands‑on. I play the drums and I’m currently teaching myself guitar, which has been a fun challenge. 
+                I’m also really fascinated by weather — enough that I taught myself how to read a weather radar just because I wanted to understand it better and know how to identify severe weather. 
+                I’m the youngest of three, with two older sisters who are both in college right now, and they’ve always been a big part of my life.
             </p>
         </section>
         <section>
             <img src="Extra/Family.jpg" alt="placeholder image">
-            <a href="#">Link</a>
+            <a href="#">Family</a>
             <img src="Extra/Book.jpg" alt="placeholder image">
-            <a href="#">Link</a>
-            <img src="image3.png" alt="placeholder image">
-            <a href="#">Link</a>
+            <a href="#">Hobbies</a>
         </section>
     <footer>
         </section>
             <h3> In Class Exercises</h3>
             <ul>
-                <li><a href="exercise1.html">Exercise 1</a></li>
-                <li><a href="exercise2.html">Exercise 2</a></li>
-                <li><a href="exercise3.html">Exercise 3</a></li>
-                <li><a href="exercise4.html">Exercise 4</a></li>
-                <li><a href="exercise5.html">Exercise 5</a></li>
-                <li><a href="exercise6.html">Exercise 6</a></li>
-                <li><a href="exercise7.html">Exercise 7</a></li>
-                <li><a href="exercise8.html">Exercise 8</a></li>
+                <li><a href="ice/prophet_cards/prophet_cards/nelson.html">Prophet Cards</a></li>
+                <li><a href='ice/favorite_devo/favorite_devo/favdevo.html'>Favorite devotional</a></li>
+                <li><a href="ice/positioning/positioning/positioning.html">Positioning</a></li>
+                <li><a href="ice/signup/signup/signup.html">Signup</a></li>
+                <li><a href="ice/gallery/gallery/gallery.html">Gallery</a></li>
+                <li><a href="ice/grid_flags (1)/grid_flags/flags.html">Flags</a></li>
+                <li><a href="ice/valentines/valentines/index.html">Holiday</a></li>
+                <li><a href="exercise8.html">Client Report</a></li>
             </ul>
-        <div>[ ]</div>
-        <div>[ ]</div>
-        <div>[ ]</div>
-        <div>[ ]</div>
     </footer>
 </main>
 </body>
